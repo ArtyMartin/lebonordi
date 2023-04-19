@@ -1,23 +1,32 @@
 import { Component } from '@angular/core';
 
+interface Questionnaire {
+  number: number;
+  question: string;
+  reponses: string[];
+}
+
 @Component({
   selector: 'app-questionnaire',
   templateUrl: './questionnaire.component.html',
   styleUrls: ['./questionnaire.component.css']
 })
+
+
 export class QuestionnaireComponent {
-  public questionnaire: JSON[] = [];
+  public questionnaire: Questionnaire[] = [];
 
   constructor() {
-    const question = {
+    const question: Questionnaire = {
       number: 1,
-      questions: [
+      question : "Voulez-vous un ordinateur pour jouer aux jeux vidéos ?",
+      reponses: [
         "Oui, avec des graphismes en élevé",
         "Oui, avec des graphismes en moyen",
         "Oui, avec des graphismes en faible",
         "Non"
       ]
     };
-    this.questionnaire.push(JSON.parse(JSON.stringify(question)));
+    this.questionnaire.push(question);
   }
 }
