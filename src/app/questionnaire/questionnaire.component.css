@@ -1,0 +1,18 @@
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main > * {
+    width: 100%;
+    text-align: center;
+}
+
+.questions {
+    width: 50%;
+}
+
+.question{
+    margin-top: 2em;
+}
