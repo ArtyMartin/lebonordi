@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-questionnaire',
@@ -7,5 +6,18 @@ import { HeaderComponent } from '../header/header.component';
   styleUrls: ['./questionnaire.component.css']
 })
 export class QuestionnaireComponent {
+  public questionnaire: JSON[] = [];
 
+  constructor() {
+    const question = {
+      number: 1,
+      questions: [
+        "Oui, avec des graphismes en élevé",
+        "Oui, avec des graphismes en moyen",
+        "Oui, avec des graphismes en faible",
+        "Non"
+      ]
+    };
+    this.questionnaire.push(JSON.parse(JSON.stringify(question)));
+  }
 }
