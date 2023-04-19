@@ -1,0 +1,16 @@
+header {
+    background-color: #52D5FF;
+    width: 100%;
+    display: flex;
+    padding-left: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buton {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 50%;
+    justify-content: space-evenly;
+}
