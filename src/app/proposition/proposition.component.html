@@ -1,11 +1,15 @@
 <body>
   <h1 class="titre">Notre sélection d'ordinateur idéal pour vous</h1>
-
-  <div class="card">
-    <div class="card-body">
-      <img src="#" class="card-img-top" alt="image" />
-      <p class="name">titre</p>
-      <p class="price">prix</p>
+  <div class="card-container">
+    <div class="card">
+      <div *ngFor="let computer of computers" class="card-body">
+        <img src="#" class="card-img-top" alt="image" />
+        <p class="name">{{computer.nom}}</p>
+        <p class="price">{{computer.prix}}</p>
+      </div>
     </div>
   </div>
 </body>
+
+
+
