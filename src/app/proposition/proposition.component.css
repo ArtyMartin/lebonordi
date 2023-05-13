@@ -45,7 +45,7 @@
 }
 .card-body
 {
-         width: 40%; 
+        width: auto !important; 
         margin:100px ;
         background-color: white;
         box-shadow: 0px 5px 20px #999; 
