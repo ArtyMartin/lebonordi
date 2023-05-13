@@ -37,6 +37,10 @@
 .card{
     display: flex;
     justify-content: space-between;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
    
 }
 .card-body
@@ -46,14 +50,14 @@
         background-color: white;
         box-shadow: 0px 5px 20px #999; 
         display: flex-start;
-        margin-right: 32px;
+        
        
 }
 .name {
-        height: 250px;
+    height: 250px !important;
         position: relative;
         overflow: hidden;
-        text-align: center;
+        text-align: left;
   }
   .price {
         font-family: 'Playfair Display', serif;
