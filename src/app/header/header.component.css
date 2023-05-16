@@ -33,7 +33,7 @@ h1 {
    /* font-family: 'Bungee Hairline', cursive; */
 }
 
-label {
+a {
     /* font-family: 'Sedgwick Ave Display', cursive; */
    /* font-family: 'Wallpoet', cursive; */
    /* font-family: 'Megrim', cursive; */
@@ -41,4 +41,6 @@ label {
    /* font-family: 'Press Start 2P', cursive; */
    /* font-family: 'Audiowide', cursive; */
    /* font-family: 'Bungee Hairline', cursive; */
+   text-decoration: none;
+   color: inherit;
 }
