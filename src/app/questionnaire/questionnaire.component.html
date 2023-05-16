@@ -9,8 +9,8 @@
         <ng-container *ngFor="let question of questionnaire[indexQuestion].reponses ; let i =index;">
 
             <li class="question" >
-                <input type="radio" name="options" [(ngModel)]="selectedOption" value="{{i}}">
-                <label for="qu1" class="l1">{{question}}</label>
+                <input type="radio" name="options" [(ngModel)]="selectedOption" value="{{i}}" id="radio-{{i}}">
+                <label for="qu1" class="l1" for="radio-{{i}}">{{question}}</label>
             </li>
         </ng-container>
 

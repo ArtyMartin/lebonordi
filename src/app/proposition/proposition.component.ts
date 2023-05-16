@@ -80,10 +80,10 @@ export class PropositionComponent {
 
     this.filteredComputers = computers
       .filter((computer) => computer.type === (this.isLaptop?'portable':'fixe'))
-      .filter((computer) => computer.system.ram >= (this.cptRam*4) )
-      .filter((computer) => computer.system.cpu.core >= (this.cptProc*2) )
-      .filter((computer) => computer.system.cg.score >= (this.cptGpu*100) )
-      .filter((computer) => computer.system.hdd.capacite >= (this.cptHdd * 50))
+      .filter((computer) => computer.system.ram >= (this.cptRam*3) )
+      .filter((computer) => computer.system.cpu.core >= (this.cptProc) )
+      .filter((computer) => computer.system.cg.score >= (this.cptGpu*50) )
+      .filter((computer) => computer.system.hdd.capacite >= (this.cptHdd * 10))
     
     
     console.log(this.filteredComputers);
