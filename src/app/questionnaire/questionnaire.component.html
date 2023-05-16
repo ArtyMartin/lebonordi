@@ -2,13 +2,17 @@
     <h2>Question3</h2>
     <h3>{{ questionnaire[0].question }}</h3>
 
+    
+
     <div class="questions">
 
-        <div class="question" *ng-for="let question of questionnaire[0].questions">
-            <input type="checkbox" name="qu1" id="" class="qu1">
-            <label for="qu1" class="l1">Oui, avec des graphisme en élevé</label>
-        </div>
-    
+        <ng-container *ngFor="let question of questionnaire[0].reponses ; let i =index">
+
+            <li class="question">
+                <input type="checkbox" name="qu1" id="" class="qu1">
+                <label for="qu1" class="l1">{{question}}</label>
+            </li>
+        </ng-container>
 
     </div>
 
