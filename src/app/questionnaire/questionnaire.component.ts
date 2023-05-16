@@ -187,7 +187,15 @@ export class QuestionnaireComponent {
             break;
 
         }
-        this.router.navigate(["/propositions"])
+        this.router.navigate(["/propositions"], { queryParams :{ 
+            isLaptop: this.isLaptop,
+            cptProc: this.cptProc,
+            cptGpu: this.cptGpu,
+            cptRam: this.cptRam,
+            cptHdd: this.cptHdd
+          }
+        })
+
       }
     };
     this.questionnaire.push(question5);
