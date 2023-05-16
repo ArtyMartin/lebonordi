@@ -1,20 +1,23 @@
 <main>
-    <h2>Question3</h2>
-    <h3>{{ questionnaire[0].question }}</h3>
+    <h2>Question {{ indexQuestion + 1 }}</h2>
+    <h3>{{ questionnaire[indexQuestion].question }}</h3>
 
     
 
     <div class="questions">
 
-        <ng-container *ngFor="let question of questionnaire[0].reponses ; let i =index">
+        <ng-container *ngFor="let question of questionnaire[indexQuestion].reponses ; let i =index;">
 
-            <li class="question">
-                <input type="checkbox" name="qu1" id="" class="qu1">
+            <li class="question" >
+                <input type="radio" name="options" [(ngModel)]="selectedOption" value="{{i}}">
                 <label for="qu1" class="l1">{{question}}</label>
             </li>
         </ng-container>
 
     </div>
+
+    
+    <button id="valid" (click)="questionnaire[indexQuestion].makeResponse()">Valider</button>
 
 
 </main>

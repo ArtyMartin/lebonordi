@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface Questionnaire {
   number: number;
   question: string;
   reponses: string[];
+  makeResponse: Function;
 }
 
 @Component({
@@ -14,9 +16,22 @@ interface Questionnaire {
 
 
 export class QuestionnaireComponent {
-  public questionnaire: Questionnaire[] = [];
 
-  constructor() {
+  public questionnaire: Questionnaire[] = [];
+  public selectedOption: string = "0";
+  public indexQuestion: number = 0;
+  
+
+  public isLaptop: boolean;
+  public cptProc: number = 0;
+  public cptGpu: number = 0;
+  public cptRam: number = 0;
+  public cptHdd: number = 0;
+
+
+  constructor(
+    private router: Router
+  ) {
 
     const question1: Questionnaire = {
       number: 1,
@@ -24,7 +39,24 @@ export class QuestionnaireComponent {
       reponses: [
         "un ordinateur fixe",
         "un ordinateur portable",
-      ]
+      ],
+      makeResponse : ()=>{
+       
+        switch (this.selectedOption) {
+          
+          case "0":
+            this.isLaptop = false;
+            break;
+
+          case "1":
+            this.isLaptop = true;
+            break;
+        }
+
+        this.indexQuestion++;
+        this.selectedOption = "0";
+
+      }
     };
     this.questionnaire.push(question1);
 
@@ -35,7 +67,21 @@ export class QuestionnaireComponent {
         "Oui, c'est mon activité principal",
         "Oui",
         "Non"
-      ]
+      ],
+      makeResponse : ()=>{
+        
+        switch (this.selectedOption) {
+          
+          case "0":
+          case "1":
+            this.cptProc ++;
+            break;
+
+        }
+
+        this.indexQuestion++;
+        this.selectedOption = "0";
+      }
     };
     this.questionnaire.push(question2);
 
@@ -47,7 +93,34 @@ export class QuestionnaireComponent {
         "Oui, avec des graphismes en moyen",
         "Oui, avec des graphismes en faible",
         "Non"
-      ]
+      ],
+      makeResponse : ()=>{
+        switch (this.selectedOption) {
+          
+          case "0":
+            this.cptProc++;
+            this.cptGpu += 2;
+            this.cptRam ++;
+            this.cptHdd+=2;
+            break;
+
+          case "1":
+            this.cptProc++;
+            this.cptGpu ++;
+            this.cptRam ++;
+            this.cptHdd ++;
+            break;
+
+          case "2":
+            this.cptProc++;
+            this.cptGpu ++;
+            break;
+
+        }
+
+        this.indexQuestion++;
+        this.selectedOption = "0";
+      }
     };
     this.questionnaire.push(question3);
 
@@ -60,7 +133,35 @@ export class QuestionnaireComponent {
         "Oui, mais seulement de la vidéo",
         "Oui, mais seulement de la photo",
         "Non"
-      ]
+      ],
+      makeResponse : ()=>{
+        switch (this.selectedOption) {
+          
+          case "0":
+            this.cptProc += 2;
+            this.cptGpu += 2;
+            this.cptRam ++;
+            this.cptHdd += 2;
+            break;
+
+          case "1":
+            this.cptProc += 2;
+            this.cptGpu += 2;
+            this.cptRam ++;
+            this.cptHdd++;
+            break;
+
+          case "2":
+            this.cptProc ++;
+            this.cptGpu ++;
+              break;
+
+        }
+
+        this.indexQuestion++;
+        this.selectedOption = "0";
+
+      }
     };
     this.questionnaire.push(question4);
 
@@ -72,12 +173,24 @@ export class QuestionnaireComponent {
         "Oui, c’est mon activité principal",
         "Oui",
         "Non"
-      ]
+      ],
+      makeResponse : ()=>{
+        
+        switch (this.selectedOption) {
+          
+          case "0":
+            this.cptHdd += 2;
+            break;
+
+          case "1":
+            this.cptHdd++;
+            break;
+
+        }
+        this.router.navigate(["/propositions"])
+      }
     };
     this.questionnaire.push(question5);
-
-    console.log(this.questionnaire[0]);
-    
 
     
   }
