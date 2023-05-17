@@ -50,6 +50,10 @@ interface Computer {
 export class PropositionComponent {
   public computer: COMPUTER[] = ComputerJson;
 
+  compteur: number = 0;
+  message : string = "";
+clickMessage: boolean = false;
+
   @Input()
   public isLaptop: boolean;
   @Input()
@@ -62,6 +66,12 @@ export class PropositionComponent {
   public cptHdd: number;
 
   public filteredComputers: Computer[];
+  showNotification() {
+    this.message = "Vous Avez selectioner :";
+     this.compteur++ ;
+    ;
+    this.clickMessage = true;
+  }
 
 
   constructor(
