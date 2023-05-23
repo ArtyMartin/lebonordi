@@ -22,3 +22,12 @@ main > * {
     margin-top: 2em;
     width: 10%;
 }
+
+button {
+    background-color: #0CCA4A;
+    width: 7vw;
+    height: 4vh;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
