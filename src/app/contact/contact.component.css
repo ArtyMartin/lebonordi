@@ -54,7 +54,7 @@ body {
     border: 2px solid #0CCA4A   ;
 }
 
-.container {
+form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
