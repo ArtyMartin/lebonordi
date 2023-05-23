@@ -1,0 +1,15 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr 1fr;
+    grid-template-areas: ". container recap .";
+    width: 100%;
+}
+
+.container{
+    grid-area: container;
+}
+
+.recap{
+    grid-area: recap;
+    border: 1px solid black;
+}
