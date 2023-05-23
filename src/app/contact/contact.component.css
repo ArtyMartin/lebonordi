@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper input {
+    width: 350px;
+    height: 50px;
+    padding: 0 15px;
+    outline: none;
+    font-size: 16px;
+    color: gray;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+.wrapper label {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    color: gray;
+    font-size: 25px;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.wrapper input:focus ~ label,
+.wrapper input:valid ~ label {
+    top: 0;
+    color: black;
+    border: 2px solid #0CCA4A;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: white;
+}
+
+.wrapper input:focus,
+.wrapper input:valid {
+    border: 2px solid #0CCA4A   ;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10vh;
+    row-gap: 10vh;
+    column-gap: 10vw;
+}
+
+.wrapper {
+    width: 40vw;
+
+}
+
+.wrapper input {
+    width: 100%;
+}
+
+#contenu {
+    width: 90vw;
+}
+
+
+#contenu #inputContenu {
+    width: 90vw;
+    height: 25vh;
+    padding: 0 15px;
+    outline: none;
+    font-size: 16px;
+    color: gray;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+#contenu #inputContenu:focus ~ label,
+#contenu #inputContenu:valid ~ label {
+    top: 0;
+    color: black;
+    border: 2px solid #0CCA4A;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: white;
+}
+
+#contenu #inputContenu:focus,
+#contenu #inputContenu:valid {
+    border: 2px solid #0CCA4A   ;
+}
+
+button {
+    position: absolute;
+    right: 10vh;
+    bottom: 10vh;
+    background-color: #0CCA4A;
+    width: 13vw;
+    height: 7vh;
+    border-radius: 50px;
+    
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-size: xx-large;
+}

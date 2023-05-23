@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
 import { PanierComponent } from './panier/panier.component';
 import { CardPanierComponent } from './card-panier/card-panier.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { CardPanierComponent } from './card-panier/card-panier.component';
     HomeComponent,
     QuestionnaireComponent,
     PanierComponent,
-    CardPanierComponent
+    CardPanierComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
