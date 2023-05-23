@@ -8,7 +8,7 @@ import { PanierComponent } from './panier/panier.component';
 import { CartService } from './cart.service';
 
 const routes: Routes = [
-  {path: '*', component: HomeComponent},
+  {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'propositions', component: PropositionComponent },
   {path: 'questionaire', component: QuestionnaireComponent },
