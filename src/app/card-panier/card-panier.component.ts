@@ -1,9 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { CartService } from '../cart.service';
 
 
 interface Computer {
   marque: string;
+  image: string;
   nom: string;
   type: string;
   ecran: { taille: number, type: string, dpi: number } | null;
@@ -43,6 +45,11 @@ interface Computer {
 })
 export class CardPanierComponent {
 
+  change(value: string){
+    console.log(value);
+    
+  }
+
 
   @Input()
   public cardComputer: Computer;
@@ -50,6 +57,7 @@ export class CardPanierComponent {
 
   constructor(
     private route: ActivatedRoute,
+    public cart: CartService
   ){ }
 
 }

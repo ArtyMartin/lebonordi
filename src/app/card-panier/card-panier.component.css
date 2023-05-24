@@ -11,6 +11,8 @@
 
 img{
     grid-area: img;
+    max-width: 10vw;
+    border-right: 1px solid black;
 }
 
 h3{

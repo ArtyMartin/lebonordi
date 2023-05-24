@@ -1,6 +1,6 @@
 <main>
     <div class="container">
-        <app-card-panier *ngFor="let computer of cart.get()" [cardComputer]="computer"></app-card-panier>
+        <app-card-panier *ngFor="let computer of cart.get()" [cardComputer]="computer.computer"></app-card-panier>
     </div>
     <div class="recap">
         <span></span>

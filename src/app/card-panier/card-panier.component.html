@@ -1,15 +1,15 @@
 <div class="container">
-    <img src="" alt="">
+    <img src="{{cardComputer.image}}" alt="">
     <h3>{{cardComputer.nom}}</h3>
     <p class="caract">
         processeur :{{cardComputer.system.cpu.nom}} 
         carte graphique {{cardComputer.system.cg.modele}} 
         mémoire vive : {{cardComputer.system.ram}} 
-        stockage : {{cardComputer.system.hdd.capacite}}
+        stockage : {{cardComputer.system.hdd.capacite}} Go
     </p>
     <span class="price">{{cardComputer.prix}}€</span>
     <div class="quantity-container">
         <label for="">Quantité</label>
-        <input type="number" name="" id="" min="0" value="5">
+        <input type="number" name="" id="" min="0" onchange value="{{ cart.getQuantity( cardComputer.nom)}}">
     </div>
 </div>
