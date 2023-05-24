@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CartService } from '../cart.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-panier',
@@ -9,8 +11,10 @@ import { CartService } from '../cart.service';
 export class PanierComponent {
 
   constructor(
-    public cart: CartService
+    public cart: CartService,
+    private router: Router
   ){
+
     
   }
 
