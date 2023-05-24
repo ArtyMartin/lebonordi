@@ -1,26 +1,26 @@
-
-<form action="">
+<form [formGroup]="formulaire" (ngSubmit)="envoyerFormulaire()">
     <div class="wrapper">
-        <input type="text" required>
+        <input type="text" formControlName="nom" required>
         <label for="Nom">Nom</label>
     </div>
     <div class="wrapper">
-        <input type="text" required>
+        <input type="text" formControlName="prenom" required>
         <label for="Prenom">Prenom</label>
     </div>
     <div class="wrapper">
-        <input type="text" required>
+        <input type="email" formControlName="email" required>
         <label for="E-Mail">E-Mail</label>
+       
     </div>
     <div class="wrapper">
-        <input type="text" required>
+        <input type="text" formControlName="sujet" required>
         <label for="Sujet">Sujet</label>
     </div>
     <div class="wrapper" id="contenu">
-        <input type="text" required id="inputContenu">
+        <input type="text" formControlName="contenu" required id="inputContenu">
         <label for="Contenu">Contenu</label>
     </div>
-    <button>
-        <a href="./home">Envoyer</a>
-    </button>   
+    <button type="submit" [disabled]="!formulaire.valid">Envoyer</button>
 </form>
+
+
