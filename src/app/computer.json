@@ -5,7 +5,7 @@
         "type": "fixe",
         "ecran": null,
         "clavier": null,
-        "image": "../assets/images/MSI_MEG_Aegis_Ti5_12VTD-004EU.png",
+        "image": "../assets/images/Fixe/MSI_MEG_Aegis_Ti5_12VTD-004EU.png",
         "system": {
             "ram": 64,
             "cpu": {
@@ -37,7 +37,7 @@
         "type": "fixe",
         "ecran": null,
         "clavier": null,
-        "image": "../assets/images/Materiel-net_Backstab.png",
+        "image": "../assets/images/Fixe/Materiel-net_Backstab.png",
         "system": {
             "ram": 16,
             "cpu": {
@@ -69,7 +69,7 @@
         "type": "fixe",
         "ecran": null,
         "clavier": null,
-        "image": "../assets/images/Materiel-net_Blackbird.png",
+        "image": "../assets/images/Fixe/Materiel-net_Blackbird.png",
         "system": {
             "ram": 16,
             "cpu": {
@@ -101,7 +101,7 @@
         "type": "fixe",
         "ecran": null,
         "clavier": null,
-        "image": "../assets/images/Materiel-net_Blink.png",
+        "image": "../assets/images/Fixe/Materiel-net_Blink.png",
         "system": {
             "ram": 16,
             "cpu": {
@@ -126,7 +126,73 @@
         },
         "batterie" : null,
         "prix": 979.90
+    },  
+    {
+        "marque": "Materiel.net",
+        "nom": "Dynamite",
+        "type": "fixe",
+        "ecran": null,
+        "clavier": null,
+        "image": "../assets/images/Fixe/Materiel-net_Dynamite.png",
+        "system": {
+            "ram": 16,
+            "cpu": {
+                "marque":"INTEL",
+                "nom": "Intel Core i5 13400F",
+                "score": 25000,
+                "core": 6,
+                "frequence-max": 2.5,
+                "tdp": 125
+            },
+            "hdd": {
+                "capacite": 1000,
+                "type": "nvme",
+                "rpm": null,
+                "vitesse-transfert": 3700
+            },
+            "cg": {
+                "marque": "NVIDIA",
+                "modele": "GeForce RTX 3060 Ti",
+                "score": 2099.95
+            }
+        },
+        "batterie" : null,
+        "prix": 1399.90
     }, 
+    {
+        "marque": "ASUS",
+        "nom": "ROG STRIX GL10CE",
+        "type": "fixe",
+        "ecran": null,
+        "clavier": null,
+        "image": "../assets/images/Fixe/ASUS_ROG_STRIX_GL10CE-51140F259W.png",
+        "system": {
+            "ram": 8,
+            "cpu": {
+                "marque":"INTEL",
+                "nom": "Intel Core i5 13400F",
+                "score": 25000,
+                "core": 6,
+                "frequence-max": 2.6,
+                "tdp": 125
+            },
+            "hdd": {
+                "capacite": 512,
+                "type": "M.2 - PCI-E",
+                "rpm": null,
+                "vitesse-transfert": 3700
+            },
+            "cg": {
+                "marque": "NVIDIA",
+                "modele": "GeForce GTX 1650",
+                "score": 2099.95
+            }
+        },
+        "batterie" : null,
+        "prix": 949.96
+    }, 
+
+    
     {
         "marque": "ASSER",
         

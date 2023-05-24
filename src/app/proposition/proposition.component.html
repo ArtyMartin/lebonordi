@@ -12,10 +12,11 @@
 <div class="card-container">
 
     <div *ngFor="let computer of filteredComputers" (click)="cart.add(computer)" class="card-body"
-      title="processeur : {{computer.system.cpu.nom}} &#10; carte graphique {{computer.system.cg.modele}} &#10; mémoire vive : {{computer.system.ram}} &#10; stockage : {{computer.system.hdd.capacite}}">
+      title="processeur : {{computer.system.cpu.nom}} &#10;carte graphique {{computer.system.cg.modele}} &#10;mémoire vive : {{computer.system.ram}} &#10;stockage : {{computer.system.hdd.capacite}}">
       <img src="{{computer.image}}" class="card-img-top" alt="image" />
+      <hr>
       <p class="name">{{computer.nom}}</p>
-      
+      <hr>
       <p class="price">{{computer.prix}} €</p>
 
     </div>

@@ -1,9 +1,9 @@
 /*notification*/
 .notification {
-  position: absolute;
-  top: 18%;
-  left: 80%;
-  transform: translate(-50%,-50%);
+    position: absolute;
+    top: 18%;
+    left: 80%;
+    transform: translate(-50%,-50%);
 }
 
 .check
@@ -12,56 +12,71 @@
     background-color: rgba(7, 149, 66, 0.12156862745098039);
     box-shadow: 0px 0px 2px #259c08;
     color: #0ad406;
-  /*text-shadow: 2px 1px #00040a;*/
-  transition:0.5s;
-  cursor:pointer;
+    /*text-shadow: 2px 1px #00040a;*/
+    transition:0.5s;
+    cursor:pointer;
 }
 .check:hover{
-  background-color: rgba(7, 149, 66, 0.35);
-  transition:0.5s;
+    background-color: rgba(7, 149, 66, 0.35);
+    transition:0.5s;
 }
 .check .close{
-  position:absolute;
-  top: -50%;
-  right: -10%;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #259c08;
+    position:absolute;
+    top: -50%;
+    right: -10%;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #259c08;
 }
 
 .card-container {
+    font-family: 'Orbitron', sans-serif;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    height: 55vh;
 }
 
-.card-body
-{
-        margin:100px ;
-        background-color: white;
-        box-shadow: 0px 5px 20px #999;
-        border-radius: 10px;
-        display: flex-start;
-        height: 61vh;      
+.card-body {
+    margin:100px ;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 10px;
+    display: flex-start;
+    height: 61vh;      
+        
 }
 .name {
-        position: relative;
-        overflow: hidden;
-        text-align: left;
-        margin-top: 1vh;
-        margin-left: 2vw;
-  }
-  .price {
-        font-family: 'Playfair Display', serif;
-        text-align: right;
-        margin-top: 5vh;
-        margin-right: 2vw;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    font-size: x-large;
+    font-weight: bold;
+}
+.price {
+    text-align: right;
+    margin-top: 3vh;
+    margin-right: 2vw;
+    font-size: xx-large;
  }
 
  img {
     max-width: 20vw;
     border-radius: 10px;
     object-fit: contain;
+ }
+
+ .titre {
+    margin-top: 1vh;
+    margin-left: 2vw;
+    text-decoration: underline double;
+ }
+
+ hr,
+ .card-body {
+    border: 1px solid black;
  }
