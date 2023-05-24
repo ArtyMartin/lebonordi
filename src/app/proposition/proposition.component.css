@@ -32,10 +32,37 @@
         color: #000000;
     }
 }
+/*notification*/
 .notification {
-    display: inline-flex;
-    align-items: center;
+  position: absolute;
+  top: 18%;
+  left: 80%;
+  transform: translate(-50%,-50%);
   }
+  .check
+{
+  border: 1px solid rgba(36, 241, 6, 0.46);
+    background-color: rgba(7, 149, 66, 0.12156862745098039);
+    box-shadow: 0px 0px 2px #259c08;
+    color: #0ad406;
+  /*text-shadow: 2px 1px #00040a;*/
+  transition:0.5s;
+  cursor:pointer;
+}
+.check:hover{
+  background-color: rgba(7, 149, 66, 0.35);
+  transition:0.5s;
+}
+.check .close{
+  position:absolute;
+  top: -50%;
+  right: -10%;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #259c08;
+}
 /*le css de grid*/
 
 .card{

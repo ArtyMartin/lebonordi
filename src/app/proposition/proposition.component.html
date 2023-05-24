@@ -1,9 +1,13 @@
 <body>
+   
     <div class="notification" *ngIf="clickMessage">
+      <div class="check">
       <span>{{ message }}</span>
       <span>{{ compteur}} </span>
       <div *ngIf="compteur == 1; else loading"> ordinateur </div>
       <ng-template #loading> ordinateurs </ng-template>
+      <a class="close" href="#">&times;</a>
+    </div>
     </div>
   
   <h1 class="titre">Notre sélection d'ordinateur idéal pour vous</h1>
