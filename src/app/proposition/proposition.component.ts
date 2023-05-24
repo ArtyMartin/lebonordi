@@ -3,6 +3,7 @@ import ComputerJson from '../computer.json';
 import { ActivatedRoute } from '@angular/router';
 import { CartService } from '../cart.service';
 
+
 interface COMPUTER {
 nom: string;
 prix: number;
@@ -11,6 +12,7 @@ image: string;
 
 interface Computer {
   marque: string;
+  image: string;
   nom: string;
   type: string;
   ecran: { taille: number, type: string, dpi: number } | null;

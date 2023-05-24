@@ -1,11 +1,12 @@
 [
     {
         "marque": "ASSER",
+        
         "nom": "Respire TC10",
         "type": "fixe",
         "ecran": null,
         "clavier": null,
-        "image": "chemin",
+        "image": "../assets/images/PcGamerLoveLace_RTX-4090.png",
         "system": {
             "ram": 32,
             "cpu": {
@@ -37,7 +38,7 @@
         "type": "fixe",
         "ecran": null,
         "clavier": null,
-        "image": "chemin",
+        "image": "../assets/images/PcGamerLoveLace_RTX-4090.png",
         "system": {
             "ram": 16,
             "cpu": {
@@ -69,7 +70,7 @@
         "type": "fixe",
         "ecran": null,
         "clavier": null,
-        "image": "chemin",
+        "image": "../assets/images/PcGamerLoveLace_RTX-4090.png",
         "system": {
             "ram": 16,
             "cpu": {
@@ -97,6 +98,7 @@
     }, 
     {
         "marque": "ASSER",
+        
         "nom": "Swif 15",
         "type": "portable",
         "ecran": {
@@ -110,7 +112,7 @@
             "type": "azerty",
             "pave-num": false
         },
-        "image": "chemin",
+        "image": "../assets/images/PcGamerLoveLace_RTX-4090.png",
         "system": {
             "ram": 16,
             "cpu": {
@@ -154,7 +156,7 @@
             "type": "azerty",
             "pave-num": false
         },
-        "image": "chemin",
+        "image": "../assets/images/PcGamerLoveLace_RTX-4090.png",
         "system": {
             "ram": 16,
             "cpu": {
@@ -198,7 +200,7 @@
             "type": "azerty",
             "pave-num": false
         },
-        "image": "chemin",
+        "image": "../assets/images/PcGamerLoveLace_RTX-4090.png",
         "system": {
             "ram": 16,
             "cpu": {
@@ -242,7 +244,7 @@
             "type": "azerty",
             "pave-num": true
         },
-        "image": "chemin",
+        "image": "../assets/images/PcGamerLoveLace_RTX-4090.png",
         "system": {
             "ram": 32,
             "cpu": {
@@ -286,7 +288,7 @@
             "type": "azerty",
             "pave-num": false
         },
-        "image": "chemin",
+        "image": "../assets/images/PcGamerLoveLace_RTX-4090.png",
         "system": {
             "ram": 16,
             "cpu": {
@@ -330,7 +332,7 @@
             "type": "azerty",
             "pave-num": false
         },
-        "image": "chemin",
+        "image": "../assets/images/PcGamerLoveLace_RTX-4090.png",
         "system": {
             "ram": 16,
             "cpu": {
@@ -374,7 +376,7 @@
             "type": "azerty",
             "pave-num": false
         },
-        "image": "chemin",
+        "image": "../assets/images/PcGamerLoveLace_RTX-4090.png",
         "system": {
             "ram": 16,
             "cpu": {
@@ -418,7 +420,7 @@
             "type": "azerty",
             "pave-num": true
         },
-        "image": "chemin",
+        "image": "../assets/images/PcGamerLoveLace_RTX-4090.png",
         "system": {
             "ram": 16,
             "cpu": {
@@ -462,7 +464,7 @@
             "type": "azerty",
             "pave-num": false
         },
-        "image": "chemin",
+        "image": "../assets/images/PcGamerLoveLace_RTX-4090.png",
         "system": {
             "ram": 8,
             "cpu": {
@@ -506,7 +508,7 @@
             "type": "azerty",
             "pave-num": false
         },
-        "image": "chemin",
+        "image": "../assets/images/PcGamerLoveLace_RTX-4090.png",
         "system": {
             "ram": 4,
             "cpu": {

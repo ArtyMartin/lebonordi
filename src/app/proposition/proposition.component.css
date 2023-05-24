@@ -94,3 +94,7 @@
         font-family: 'Playfair Display', serif;
         text-align: right;
  }
+
+ img {
+    max-width: 20vw;
+ }
