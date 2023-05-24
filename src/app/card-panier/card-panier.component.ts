@@ -45,6 +45,7 @@ interface Computer {
 })
 export class CardPanierComponent {
 
+
   change(value: string){
     console.log(value);
     
@@ -54,10 +55,24 @@ export class CardPanierComponent {
   @Input()
   public cardComputer: Computer;
 
+  @Input()
+  public quantity: number = 0;
+
 
   constructor(
     private route: ActivatedRoute,
     public cart: CartService
   ){ }
+
+
+  onQuantityChange(){
+    
+    if(this.quantity > this.cart.getQuantity(this.cardComputer.nom)){
+      this.cart.addOne(this.cardComputer.nom)
+    }else{
+      this.cart.removeOne(this.cardComputer.nom)
+    }
+    
+  }
 
 }

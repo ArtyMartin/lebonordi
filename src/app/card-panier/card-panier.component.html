@@ -10,6 +10,6 @@
     <span class="price">{{cardComputer.prix}}€</span>
     <div class="quantity-container">
         <label for="">Quantité</label>
-        <input type="number" name="" id="" min="0" onchange value="{{ cart.getQuantity( cardComputer.nom)}}">
+        <input type="number" name="" id="" min="0" [(ngModel)]="quantity" (ngModelChange)="onQuantityChange()" >
     </div>
 </div>

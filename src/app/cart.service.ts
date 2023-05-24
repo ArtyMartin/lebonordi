@@ -98,6 +98,16 @@ export class CartService {
     return this.quantity;
   }
 
+  getTotalPrice(){
+    let total = 0;
+
+    this.computers.forEach((computer)=>{
+      total += computer.quantity * computer.computer.prix;
+    })
+
+    return total;
+  }
+
   removeOne(nameOfComputer: string){
 
     this.computers.map((element)=>{
@@ -106,9 +116,28 @@ export class CartService {
         element.quantity -= 1;
       }
     })
+
+    this.purge();
+  }
+
+  addOne(nameOfComputer: string){
+
+    this.computers.map((element)=>{
+      
+      if (element.computer.nom == nameOfComputer) {
+        element.quantity += 1;
+      }
+    })
   }
 
   
+  private purge(){
+
+    this.computers = this.computers.filter((computer)=>{
+      return computer.quantity > 0;
+    })
+
+  }
 
   constructor() { }
 }
