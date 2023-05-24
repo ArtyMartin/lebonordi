@@ -1,0 +1,27 @@
+img {
+    width: 100vw; /* 100% de la largeur de l'écran */
+    height: 75vh; /* 50% de la hauteur de l'écran */
+    object-fit: cover; /* Redimensionner l'image pour remplir les dimensions spécifiées */
+}
+
+button {
+    margin-top: 3vh;
+    width: 20vw;
+    height: 10vh;
+    background-color: #0CCA4A;
+    border-radius: 50px;
+    
+}
+a {
+    text-decoration: none;
+    font-size: xx-large;
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+}
+  
+div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}

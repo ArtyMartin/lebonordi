@@ -1,0 +1,14 @@
+<main>
+    <div class="container">
+        <app-card-panier *ngFor="let computer of cart.get()" [cardComputer]="computer"></app-card-panier>
+    </div>
+    <div class="recap">
+        <span></span>
+        <div class="price">
+            Prix à payer 1000 €
+        </div>
+        <button [attr.disabled]="cart.get().length === 0 ? true : null">
+            <a [routerLink]="cart.get().length !== 0 ? ['/home'] : null">Payer</a> 
+        </button>
+    </div>
+</main>

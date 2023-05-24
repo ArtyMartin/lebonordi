@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import ComputerJson from '../computer.json';
 import { ActivatedRoute } from '@angular/router';
+import { CartService } from '../cart.service';
 
 interface COMPUTER {
 nom: string;
@@ -50,9 +51,9 @@ interface Computer {
 export class PropositionComponent {
   public computer: COMPUTER[] = ComputerJson;
 
-  compteur: number = 0;
-  message : string = "";
-clickMessage: boolean = false;
+  public compteur: number = 0;
+  public message : string = "";
+  public clickMessage: boolean = false;
 
   @Input()
   public isLaptop: boolean;
@@ -75,7 +76,8 @@ clickMessage: boolean = false;
 
 
   constructor(
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    public cart: CartService
   ){ }
 
   ngOnInit() {

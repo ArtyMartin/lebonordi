@@ -1,0 +1,46 @@
+.container{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr;
+    grid-template-areas: "img title price"
+                        "img desc quantity-container";
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 80%;
+}
+
+img{
+    grid-area: img;
+}
+
+h3{
+    grid-area: title;
+}
+
+.caract{
+    grid-area: desc;
+}
+
+.price{
+    margin-top: 10%;
+    grid-area: price;
+    text-align: center;
+}
+
+.quantity-container{
+    grid-area: quantity-container;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.quantity-container > label{
+    width: 100%;
+    text-align: center;
+}
+
+
+.quantity-container > input{
+    width: 50%;
+    margin-bottom: 5em;
+}

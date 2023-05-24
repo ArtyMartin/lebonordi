@@ -4,12 +4,17 @@ import { HeaderComponent } from './header/header.component';
 import { PropositionComponent } from './proposition/proposition.component';
 import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
 import { HomeComponent } from './home/home.component';
+import { PanierComponent } from './panier/panier.component';
+import { CartService } from './cart.service';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-  {path: '*', component: HomeComponent},
+  {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
-   {path: 'propositions', component: PropositionComponent },
-   {path: 'questionaire', component: QuestionnaireComponent }
+  {path: 'propositions', component: PropositionComponent },
+  {path: 'questionaire', component: QuestionnaireComponent },
+  {path: 'contact', component: ContactComponent },
+  {path: 'panier', component: PanierComponent }
 ];
 
 @NgModule({
@@ -17,6 +22,12 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { 
+
+  constructor(
+    cart: CartService
+  ){
+
+  }
 
 
 }
