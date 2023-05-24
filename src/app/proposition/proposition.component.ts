@@ -58,7 +58,7 @@ export class PropositionComponent {
   public clickMessage: boolean = false;
 
   @Input()
-  public isLaptop: boolean;
+  public isLaptop: string;
   @Input()
   public cptProc: number;
   @Input()
@@ -93,21 +93,14 @@ export class PropositionComponent {
     const computers: Computer[] = ComputerJson;
 
     console.log(this.isLaptop);
-
-    if (this.isLaptop) {
-      console.log("p");
-    } else {
-      console.log("f");
-    }
-    
     
     //console.log(this.isLaptop ? "p" : "f");
     
 
     this.filteredComputers = computers
-      .filter((computer) => computer.type === (this.isLaptop ? "fixe" : "portable"))
+      .filter((computer) => computer.type === this.isLaptop)
       .filter((computer) => computer.system.ram >= (this.cptRam * 3))
-      .filter((computer) => computer.system.cpu.core >= this.cptProc)
+      .filter((computer) => computer.system.cpu.core >= this.cptProc *2)
       .filter((computer) => computer.system.cg.score >= (this.cptGpu * 50))
       .filter((computer) => computer.system.hdd.capacite >= (this.cptHdd * 10));
 

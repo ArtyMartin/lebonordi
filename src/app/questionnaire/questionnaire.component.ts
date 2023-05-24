@@ -22,7 +22,7 @@ export class QuestionnaireComponent {
   public indexQuestion: number = 0;
   
 
-  public isLaptop: boolean;
+  public isLaptop: string;
   public cptProc: number = 0;
   public cptGpu: number = 0;
   public cptRam: number = 0;
@@ -45,11 +45,11 @@ export class QuestionnaireComponent {
         switch (this.selectedOption) {
           
           case "0":
-            this.isLaptop = false;
+            this.isLaptop = "fixe";
             break;
 
           case "1":
-            this.isLaptop = true;
+            this.isLaptop = "portable";
             break;
         }
 
