@@ -93,7 +93,7 @@ export class PropositionComponent {
     const computers: Computer[] = ComputerJson;
 
     this.filteredComputers = computers
-      .filter((computer) => computer.type === (this.isLaptop?'portable':'fixe'))
+      .filter((computer) => computer.type === (this.isLaptop?'fixe':'portable'))
       .filter((computer) => computer.system.ram >= (this.cptRam*3) )
       .filter((computer) => computer.system.cpu.core >= (this.cptProc) )
       .filter((computer) => computer.system.cg.score >= (this.cptGpu*50) )
