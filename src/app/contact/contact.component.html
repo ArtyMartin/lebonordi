@@ -1,46 +1,40 @@
-<div class="alert" *ngIf="submitted && formulaire.valid">
+<div class="alert" *ngIf="formSubmitted && formulaire.valid">
     <div class="alert-success">Votre message a bien été envoyé</div>
 </div>
 <form [formGroup]="formulaire" (ngSubmit)="onSubmit()">
     <div class="wrapper">
         <input type="text" formControlName="nom" required>
         <div *ngIf="submitted && f['nom'].errors" class="invalid-feedback">
-            <div *ngIf="f['nom'].errors && f['nom'].errors['required']">Saisir votre Nom</div>
+            <div *ngIf="f['nom'].errors['required']">Saisir votre Nom</div>
         </div>
         <label for="Nom">Nom</label>
     </div>
     <div class="wrapper">
         <input type="text" formControlName="prenom" required>
         <div *ngIf="submitted && f['prenom'].errors" class="invalid-feedback">
-            <div *ngIf="f['prenom'].errors && f['prenom'].errors['required']">Saisir votre Prenom</div>
+            <div *ngIf="f['prenom'].errors['required']">Saisir votre Prenom</div>
         </div>
         <label for="Prenom">Prenom</label>
     </div>
     <div class="wrapper">
         <input type="email" formControlName="email" required>
         <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
-            <div *ngIf="f['email'].errors && f['email'].errors['required']">Saisir votre Email</div>
+            <div *ngIf="f['email'].errors['required']">Saisir votre Email</div>
         </div>
         <label for="E-Mail">E-Mail</label>
        
     </div>
     <div class="wrapper">
         <input type="text" formControlName="sujet" required>
-        <div *ngIf="submitted && f['sujet'].errors" class="invalid-feedback">
-            <div *ngIf="f['sujet'].errors && f['sujet'].errors['required']">Saisir votre Nom</div>
-        </div>
         <label for="Sujet">Sujet</label>
     </div>
     <div class="wrapper" id="contenu">
-        <div *ngIf="submitted && f['contenu'].errors" class="invalid-feedback">
-            <div *ngIf="f['contenu'].errors && f['contenu'].errors['required']">Saisir un contenu</div>
-        </div>
         <input type="text" formControlName="contenu" required id="inputContenu">
+        <div *ngIf="submitted && f['contenu'].errors" class="invalid-feedback">
+            <div *ngIf="f['contenu'].errors['required']">Saisir un contenu</div>
+        </div>
         <label for="Contenu">Contenu</label>
     </div>
    
-    <button type="submit" >Envoyer</button>
-   
+    <button type="submit">Envoyer</button>
 </form>
-
-
