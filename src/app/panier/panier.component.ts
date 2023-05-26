@@ -16,6 +16,7 @@ export class PanierComponent {
   public mail: string = "";
   public telephone: string = "";
   public errorNotif: string[] = ["","","","",""];
+  public isPay: boolean = false;
 
   constructor(
     public cart: CartService,
@@ -27,6 +28,9 @@ export class PanierComponent {
 
   public pay(){
 
+    this.errorNotif = ["","","","",""];
+
+
     const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
     const telephoneRegex = /^\d{10}$/;
     let send : boolean = true;
@@ -36,7 +40,7 @@ export class PanierComponent {
       send = false;
     }
 
-    if( !emailRegex.test(this.telephone)){
+    if( !telephoneRegex.test(this.telephone)){
       this.errorNotif[4] = "Le numéro de téléphone doit être sous la forme de 10 chiffres !";
       send = false;
     }
@@ -69,8 +73,14 @@ export class PanierComponent {
 
 
     if(this.cart.get().length > 0 && send){
-      this.cart.clear()
-      this.router.navigate(["/home"]);
+      this.isPay = true;
+      
+
+      setTimeout(() => {
+        this.cart.clear()
+        this.router.navigate(["/home"]);
+      }, 1000);
+      
     }
     
   }

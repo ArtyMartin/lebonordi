@@ -1,3 +1,6 @@
+<div class="alert" *ngIf="isPay">
+    <div class="alert-success">Votre achat a bien été prise en compte !</div>
+</div>
 <main>
     <div class="container">
         <app-card-panier *ngFor="let computer of cart.get()" [cardComputer]="computer.computer" [quantity]="computer.quantity"></app-card-panier>
