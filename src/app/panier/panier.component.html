@@ -36,7 +36,7 @@
             <p class="error">{{errorNotif[4]}}</p>
 
         </span>
-        <div class="price" *ngIf="cart.getTotalPrice() > 0" >
+        <div class="price" *ngIf="cart.length() > 0" >
             Prix à payer {{cart.getTotalPrice()}} €
         </div>
         <button [attr.disabled]="cart.get().length === 0 ? true : null" (click)="pay()">

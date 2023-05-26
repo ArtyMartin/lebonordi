@@ -69,8 +69,8 @@ export class PanierComponent {
 
 
     if(this.cart.get().length > 0 && send){
-      //this.cart.clear()
-      //this.router.navigate(["/home"]);
+      this.cart.clear()
+      this.router.navigate(["/home"]);
     }
     
   }

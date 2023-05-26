@@ -105,7 +105,7 @@ export class CartService {
       total += computer.quantity * computer.computer.prix;
     })
 
-    return total;
+    return total.toFixed(2);
   }
 
   removeOne(nameOfComputer: string){
