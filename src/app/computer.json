@@ -190,16 +190,13 @@
         },
         "batterie" : null,
         "prix": 949.96
-    }, 
-
-    
+    },
     {
         "marque": "ASSER",
-        
-        "nom": "Swif 15",
+        "nom": "Predator Helios 300",
         "type": "portable",
         "ecran": {
-            "taille": 15,
+            "taille": 15.6,
             "type": "TN",
             "dpi": 100
         },
@@ -209,33 +206,473 @@
             "type": "azerty",
             "pave-num": false
         },
-        "image": "../assets/images/PcGamerLoveLace_RTX-4090.png",
+        "image": "../assets/images/Portable/ACER_Predator_Helios_300.png",
         "system": {
             "ram": 16,
             "cpu": {
-                "marque":"AMDé",
-                "nom": "B5 550",
+                "marque":"INTEL",
+                "nom": "Intel Core i7-11800H",
                 "score": 12000,
-                "core": 6,
-                "frequence-max": 4200,
+                "core": 8,
+                "frequence-max": 2.3,
                 "tdp": 25
             },
             "hdd": {
-                "capacite": 1024,
+                "capacite": 1000,
                 "type": "nvme",
                 "rpm": null,
                 "vitesse-transfert": 3000
             },
             "cg": {
                 "marque": "NVADIA",
-                "modele": "mtx 350",
+                "modele": "GeForce RTX 3070",
                 "score": 4000
             }
         },
         "batterie" : {
-            "capacite": 55,
-            "autonomie": 6
+            "capacite": 58.7,
+            "autonomie": 7
         },
-        "prix": 900
+        "prix": 1899.95
+    },
+    {
+        "marque": "MSI",
+        "nom": "Stealth 16 Studio",
+        "type": "portable",
+        "ecran": {
+            "taille": 16,
+            "type": "TN",
+            "dpi": 100
+        },
+        "clavier": {
+            "chiclet": true,
+            "retroeclairage": true,
+            "type": "azerty",
+            "pave-num": false
+        },
+        "image": "../assets/images/Portable/MSI_Stealth_16_Studio.png",
+        "system": {
+            "ram": 32,
+            "cpu": {
+                "marque":"INTEL",
+                "nom": "Intel Core i9-13900H",
+                "score": 12000,
+                "core": 14,
+                "frequence-max": 5.4,
+                "tdp": 25
+            },
+            "hdd": {
+                "capacite": 1000,
+                "type": "nvme",
+                "rpm": null,
+                "vitesse-transfert": 3000
+            },
+            "cg": {
+                "marque": "NVADIA",
+                "modele": "GeForce RTX 4070",
+                "score": 4000
+            }
+        },
+        "batterie" : {
+            "capacite": 99.9,
+            "autonomie": 9
+        },
+        "prix": 3299.95
+    },
+    {
+        "marque": "ASUS",
+        "nom": "Tuf Gaming F15",
+        "type": "portable",
+        "ecran": {
+            "taille": 16,
+            "type": "TN",
+            "dpi": 100
+        },
+        "clavier": {
+            "chiclet": true,
+            "retroeclairage": true,
+            "type": "azerty",
+            "pave-num": false
+        },
+        "image": "../assets/images/Portable/ASUS_TUF_Gaming_F15.png",
+        "system": {
+            "ram": 16,
+            "cpu": {
+                "marque":"INTEL",
+                "nom": "Intel Core i7-12700H",
+                "score": 12000,
+                "core": 14,
+                "frequence-max": 4.7,
+                "tdp": 25
+            },
+            "hdd": {
+                "capacite": 512,
+                "type": "nvme",
+                "rpm": null,
+                "vitesse-transfert": 3000
+            },
+            "cg": {
+                "marque": "NVADIA",
+                "modele": "GeForce RTX 4060",
+                "score": 4000
+            }
+        },
+        "batterie" : {
+            "capacite": 90,
+            "autonomie": 7
+        },
+        "prix": 1429.95
+    },
+    {
+        "marque": "Aorus",
+        "nom": "15 XE5",
+        "type": "portable",
+        "ecran": {
+            "taille": 15.6,
+            "type": "TN",
+            "dpi": 100
+        },
+        "clavier": {
+            "chiclet": true,
+            "retroeclairage": true,
+            "type": "azerty",
+            "pave-num": false
+        },
+        "image": "../assets/images/Portable/Aorus_15_XE5.png",
+        "system": {
+            "ram": 16,
+            "cpu": {
+                "marque":"INTEL",
+                "nom": "Intel Core i7-12700H",
+                "score": 12000,
+                "core": 14,
+                "frequence-max": 4.7,
+                "tdp": 25
+            },
+            "hdd": {
+                "capacite": 512,
+                "type": "nvme",
+                "rpm": null,
+                "vitesse-transfert": 3000
+            },
+            "cg": {
+                "marque": "NVADIA",
+                "modele": "GeForce RTX 3070 Ti",
+                "score": 4000
+            }
+        },
+        "batterie" : {
+            "capacite": 90,
+            "autonomie": 8  
+        },
+        "prix": 1999.95
+    },
+    {
+        "marque": "MSI",
+        "nom": "Pulse 15",
+        "type": "portable",
+        "ecran": {
+            "taille": 15.6,
+            "type": "TN",
+            "dpi": 100
+        },
+        "clavier": {
+            "chiclet": true,
+            "retroeclairage": true,
+            "type": "azerty",
+            "pave-num": false
+        },
+        "image": "../assets/images/Portable/MSI_Pulse_15.png",
+        "system": {
+            "ram": 32,
+            "cpu": {
+                "marque":"INTEL",
+                "nom": "Intel Core i7-13700H",
+                "score": 12000,
+                "core": 14,
+                "frequence-max": 4.7,
+                "tdp": 25
+            },
+            "hdd": {
+                "capacite": 1000,
+                "type": "nvme",
+                "rpm": null,
+                "vitesse-transfert": 3000
+            },
+            "cg": {
+                "marque": "NVADIA",
+                "modele": "GeForce RTX 4070",
+                "score": 4000
+            }
+        },
+        "batterie" : {
+            "capacite": 90,
+            "autonomie": 8  
+        },
+        "prix": 2699.95
+    },
+    {
+        "marque": "ASUS",
+        "nom": "VivoBook 14",
+        "type": "portable",
+        "ecran": {
+            "taille": 15.6,
+            "type": "TN",
+            "dpi": 100
+        },
+        "clavier": {
+            "chiclet": true,
+            "retroeclairage": true,
+            "type": "azerty",
+            "pave-num": false
+        },
+        "image": "../assets/images/Portable/ASUS_VivoBook_14.png",
+        "system": {
+            "ram": 8,
+            "cpu": {
+                "marque":"AMD",
+                "nom": "Ryzen 5 4600H",
+                "score": 12000,
+                "core": 14,
+                "frequence-max": 4.7,
+                "tdp": 25
+            },
+            "hdd": {
+                "capacite": 512,
+                "type": "nvme",
+                "rpm": null,
+                "vitesse-transfert": 3000
+            },
+            "cg": {
+                "marque": "AMD",
+                "modele": "Radeon Graphics",
+                "score": 4000
+            }
+        },
+        "batterie" : {
+            "capacite": 42,
+            "autonomie": 8  
+        },
+        "prix": 599.95
+    },
+    {
+        "marque": "Gigabyte",
+        "nom": "G5",
+        "type": "portable",
+        "ecran": {
+            "taille": 15.6,
+            "type": "TN",
+            "dpi": 100
+        },
+        "clavier": {
+            "chiclet": true,
+            "retroeclairage": true,
+            "type": "azerty",
+            "pave-num": false
+        },
+        "image": "../assets/images/Portable/Gigabyte_G5.png",
+        "system": {
+            "ram": 8,
+            "cpu": {
+                "marque":"INTEL",
+                "nom": "Intel Core i5-12500H",
+                "score": 12000,
+                "core": 12,
+                "frequence-max": 4.5,
+                "tdp": 25
+            },
+            "hdd": {
+                "capacite": 512,
+                "type": "nvme",
+                "rpm": null,
+                "vitesse-transfert": 3000
+            },
+            "cg": {
+                "marque": "NVIDIA",
+                "modele": "GeForce RTX 4050",
+                "score": 4000
+            }
+        },
+        "batterie" : {
+            "capacite": 54,
+            "autonomie": 8  
+        },
+        "prix": 1099.95
+    },
+    {
+        "marque": "ASUS",
+        "nom": "Vivobook 14",
+        "type": "portable",
+        "ecran": {
+            "taille": 15.6,
+            "type": "TN",
+            "dpi": 100
+        },
+        "clavier": {
+            "chiclet": true,
+            "retroeclairage": true,
+            "type": "azerty",
+            "pave-num": false
+        },
+        "image": "../assets/images/Portable/ASUS_VivoBook_14.png",
+        "system": {
+            "ram": 8,
+            "cpu": {
+                "marque":"INTEL",
+                "nom": "Intel Core i3-1115G4",
+                "score": 12000,
+                "core": 12,
+                "frequence-max": 1.7,
+                "tdp": 25
+            },
+            "hdd": {
+                "capacite": 512,
+                "type": "nvme",
+                "rpm": null,
+                "vitesse-transfert": 3000
+            },
+            "cg": {
+                "marque": "INTEL",
+                "modele": "UHD Graphics",
+                "score": 4000
+            }
+        },
+        "batterie" : {
+            "capacite": 37,
+            "autonomie": 8  
+        },
+        "prix": 499.95
+    },
+    {
+        "marque": "ASUS",
+        "nom": "Vivobook 14",
+        "type": "portable",
+        "ecran": {
+            "taille": 15.6,
+            "type": "TN",
+            "dpi": 100
+        },
+        "clavier": {
+            "chiclet": true,
+            "retroeclairage": true,
+            "type": "azerty",
+            "pave-num": false
+        },
+        "image": "../assets/images/Portable/ASUS_VivoBook_14.png",
+        "system": {
+            "ram": 8,
+            "cpu": {
+                "marque":"INTEL",
+                "nom": "Intel Core i3-1115G4",
+                "score": 12000,
+                "core": 12,
+                "frequence-max": 1.7,
+                "tdp": 25
+            },
+            "hdd": {
+                "capacite": 512,
+                "type": "nvme",
+                "rpm": null,
+                "vitesse-transfert": 3000
+            },
+            "cg": {
+                "marque": "INTEL",
+                "modele": "UHD Graphics",
+                "score": 4000
+            }
+        },
+        "batterie" : {
+            "capacite": 37,
+            "autonomie": 8  
+        },
+        "prix": 499.95
+    },
+    {
+        "marque": "ASUS",
+        "nom": "A15",
+        "type": "portable",
+        "ecran": {
+            "taille": 15.6,
+            "type": "TN",
+            "dpi": 100
+        },
+        "clavier": {
+            "chiclet": true,
+            "retroeclairage": true,
+            "type": "azerty",
+            "pave-num": false
+        },
+        "image": "../assets/images/Portable/ASUS_A15.png",
+        "system": {
+            "ram": 16,
+            "cpu": {
+                "marque":"AMD",
+                "nom": "Ryzen 7 6800H",
+                "score": 12000,
+                "core": 8,
+                "frequence-max": 3.7,
+                "tdp": 25
+            },
+            "hdd": {
+                "capacite": 512,
+                "type": "nvme",
+                "rpm": null,
+                "vitesse-transfert": 3000
+            },
+            "cg": {
+                "marque": "NVIDIA",
+                "modele": "GeForce RTX 3050 Ti",
+                "score": 4000
+            }
+        },
+        "batterie" : {
+            "capacite": 56,
+            "autonomie": 8  
+        },
+        "prix": 1499.95
+    },
+    {
+        "marque": "ASUS",
+        "nom": "Zenbook 14 OLED",
+        "type": "portable",
+        "ecran": {
+            "taille": 15.6,
+            "type": "TN",
+            "dpi": 100
+        },
+        "clavier": {
+            "chiclet": true,
+            "retroeclairage": true,
+            "type": "azerty",
+            "pave-num": false
+        },
+        "image": "../assets/images/Portable/ASUS_Zenbook_14_OLED.png",
+        "system": {
+            "ram": 16,
+            "cpu": {
+                "marque":"AMD",
+                "nom": "Ryzen 7 6800H",
+                "score": 12000,
+                "core": 8,
+                "frequence-max": 2,
+                "tdp": 25
+            },
+            "hdd": {
+                "capacite": 512,
+                "type": "nvme",
+                "rpm": null,
+                "vitesse-transfert": 3000
+            },
+            "cg": {
+                "marque": "AMD",
+                "modele": "Ryzen 7 5825U",
+                "score": 4000
+            }
+        },
+        "batterie" : {
+            "capacite": 75,
+            "autonomie": 8  
+        },
+        "prix": 1149.95
     }
 ]
