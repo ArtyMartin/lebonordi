@@ -120,6 +120,13 @@ export class CartService {
     this.purge();
   }
 
+  removeRef(nameOfComputer: String){
+
+    this.computers = this.computers.filter((computer)=>{
+      return computer.computer.nom != nameOfComputer;
+    })
+  }
+
   addOne(nameOfComputer: string){
 
     this.computers.map((element)=>{
@@ -129,6 +136,11 @@ export class CartService {
       }
     })
   }
+
+  clear(){
+    this.computers = []
+  }
+  
 
   
   private purge(){

@@ -12,4 +12,5 @@
         <label for="">Quantité</label>
         <input type="number" name="" id="" min="0" [(ngModel)]="quantity" (ngModelChange)="onQuantityChange()" >
     </div>
+    <span class="remove" (click)="cart.removeRef(cardComputer.nom)" >x</span>
 </div>

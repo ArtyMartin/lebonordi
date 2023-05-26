@@ -17,7 +17,7 @@ main{
     grid-area: recap;
     border: 1px solid black;
     border-radius: 1em;
-    margin-top: 20vh;
+    margin-top: 5vh;
     margin-bottom: 5vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -35,6 +35,8 @@ main{
 .recap > .price{
     grid-area: price;
     text-align: center;
+    border-top: 1px solid black;
+    padding: 10px;
 }
 
 
@@ -55,5 +57,67 @@ main{
 
 .recap > button:disabled{
     background-color: #8cc09e;
+    cursor:not-allowed;
 
+}
+
+
+.infos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 80%; 
+}
+
+.wrapper input {
+    width: 350px;
+    height: 50px;
+    padding: 0 15px;
+    outline: none;
+    font-size: 16px;
+    color: gray;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+.wrapper label {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    color: gray;
+    font-size: 25px;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.wrapper input:focus ~ label,
+.wrapper input:valid ~ label {
+    top: 0;
+    color: black;
+    border: 2px solid #0CCA4A;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: white;
+}
+
+.wrapper input:focus,
+.wrapper input:valid {
+    border: 2px solid #0CCA4A   ;
+}
+
+.error{
+    width: 100%;
+    color: darkred;
+    font-size: 16px;
+    margin-left: 5%;
 }

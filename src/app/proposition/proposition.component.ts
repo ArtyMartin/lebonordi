@@ -91,10 +91,6 @@ export class PropositionComponent {
     this.cptHdd = this.route.snapshot.queryParams['cptHdd'];
 
     const computers: Computer[] = ComputerJson;
-
-    console.log(this.isLaptop);
-    
-    //console.log(this.isLaptop ? "p" : "f");
     
 
     this.filteredComputers = computers
@@ -105,7 +101,5 @@ export class PropositionComponent {
       .filter((computer) => computer.system.hdd.capacite >= (this.cptHdd * 10));
 
     
-    
-    console.log(this.filteredComputers);
-  }
+      }
 }

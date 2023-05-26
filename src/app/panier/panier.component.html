@@ -3,12 +3,44 @@
         <app-card-panier *ngFor="let computer of cart.get()" [cardComputer]="computer.computer" [quantity]="computer.quantity"></app-card-panier>
     </div>
     <div class="recap">
-        <span></span>
+        <span class="infos">
+            <p>Les livraisons hors France ne sont pas effectuées.</p>
+            <div class="wrapper">
+                <input type="text" [(ngModel)]="ville" required value="">
+                <label for="">Ville</label>
+            </div>
+            <p class="error">{{errorNotif[0]}}</p>
+            <div class="wrapper">
+                <input type="text" [(ngModel)]="codePostal" required value="">
+                <label for="">Code postal</label>
+                
+            </div>
+            <p class="error" >{{errorNotif[1]}}</p>
+            <div class="wrapper">
+                <input type="text" [(ngModel)]="adresse" required value="">
+                <label for="">Adresse</label>
+                
+            </div>
+            <p class="error" >{{errorNotif[2]}}</p>
+            <div class="wrapper">
+                <input type="text" [(ngModel)]="mail" value="" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                <label for="">Mail</label>
+                
+            </div>
+            <p class="error" >{{errorNotif[3]}}</p>
+            <div class="wrapper">
+                <input type="tel" [(ngModel)]="telephone" value="" required pattern="/^\d{10}$/">
+                <label for="">Numéro tél.</label>
+                
+            </div>
+            <p class="error">{{errorNotif[4]}}</p>
+
+        </span>
         <div class="price" *ngIf="cart.getTotalPrice() > 0" >
             Prix à payer {{cart.getTotalPrice()}} €
         </div>
-        <button [attr.disabled]="cart.get().length === 0 ? true : null">
-            <a [routerLink]="cart.get().length !== 0 ? ['/home'] : null">Payer</a> 
+        <button [attr.disabled]="cart.get().length === 0 ? true : null" (click)="pay()">
+            <a >Payer</a> 
         </button>
     </div>
 </main>
